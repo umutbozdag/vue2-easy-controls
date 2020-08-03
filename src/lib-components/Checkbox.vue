@@ -74,7 +74,7 @@ export default {
     labelStyle: {
       type: Object,
       default () {
-        return false
+        return {}
       }     
     },
 

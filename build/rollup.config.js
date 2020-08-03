@@ -106,7 +106,7 @@ if (!argv.format || argv.format === 'cjs') {
       compact: true,
       file: 'dist/vue-easy-controls.ssr.js',
       format: 'cjs',
-      name: 'VueEasyControls',
+      name: 'Vue2EasyControls',
       exports: 'named',
       globals,
     },
@@ -133,10 +133,10 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-easy-controls.min.js',
-      format: 'iife',
-      name: 'VueEasyControls',
-      exports: 'named',
+      file: "dist/vue-easy-controls.min.js",
+      format: "iife",
+      name: "Vue2EasyControls",
+      exports: "named",
       globals,
     },
     plugins: [

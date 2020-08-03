@@ -2,7 +2,7 @@
 import * as components from '@/lib-components/index';
 
 // install function executed by Vue.use()
-const install = function installVueEasyControls(Vue) {
+const install = function installVue2EasyControls(Vue) {
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(([componentName, component]) => {

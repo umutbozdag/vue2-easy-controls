@@ -460,7 +460,7 @@ var components = /*#__PURE__*/Object.freeze({
 
 // Import vue components
 
-const install = function installVueEasyControls(Vue) {
+const install = function installVue2EasyControls(Vue) {
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(([componentName, component]) => {

@@ -4,11 +4,11 @@
 
 ## Installing
 
-`npm i vue-easy-controls`
+`npm i vue2-easy-controls`
 
 ### <center>OR<center/>
 
-`yarn add vue-easy-controls`
+`yarn add vue2-easy-controls`
 
 
 ## Usage
@@ -16,7 +16,7 @@
 ### Registering components globally
 
 ```js
-import { EasyCheckbox, EasyRadio } from 'vue-easy-controls'
+import { EasyCheckbox, EasyRadio } from 'vue2-easy-controls'
 
 Vue.use(EasyCheckbox)
 Vue.use(EasyRadio)
@@ -25,7 +25,7 @@ Vue.use(EasyRadio)
 ### Registering components locally
 
 ```js
-import { EasyCheckbox, EasyRadio } from 'vue-easy-controls'
+import { EasyCheckbox, EasyRadio } from 'vue2-easy-controls'
 
 export default {
   name: 'MyLocalComponent'

@@ -73,7 +73,9 @@ export default {
 
     labelStyle: {
       type: Object,
-      default: () => {}        
+      default () {
+        return false
+      }     
     },
 
     labelOnLeft: {

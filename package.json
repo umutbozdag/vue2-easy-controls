@@ -2,6 +2,7 @@
   "name": "vue-easy-controls",
   "version": "1.0.0",
   "description": "",
+  "private": false,
   "main": "dist/vue-easy-controls.ssr.js",
   "browser": "dist/vue-easy-controls.esm.js",
   "module": "dist/vue-easy-controls.esm.js",
@@ -11,7 +12,7 @@
     "src/**/*.vue"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve dev/serve.js",
+    "serve": "vue-cli-service serve dev/serve.js --open",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",

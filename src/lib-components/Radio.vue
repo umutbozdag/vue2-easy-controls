@@ -1,8 +1,8 @@
 <template>
-  <div v-if="show" class="easy-checkbox">
+  <div v-if="show" class="easy-radio">
     <label v-if="labelOnLeft && text" :style="computedLabelStyle">{{ text }}</label>
     <input
-      type="checkbox"
+      type="radio"
       class="custom"
       :value="value"
       @change="handleOnChange"
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'EasyCheckbox',
+  name: 'EasyRadio',
 
   methods: {
     handleOnChange (event) {
@@ -52,12 +52,12 @@ export default {
       type: [Boolean, Array, Object, String]
     },
 
-    required: {
+    checked: {
       type: Boolean,
       default: () => false
     },
 
-    checked: {
+    required: {
       type: Boolean,
       default: () => false
     },
@@ -73,7 +73,9 @@ export default {
 
     labelStyle: {
       type: Object,
-      default: () => {}        
+      default () {
+        return {}
+      }  
     },
 
     labelOnLeft: {
@@ -96,7 +98,7 @@ export default {
         marginLeft: labelStyle.marginLeft || '8px',
         marginRight: labelStyle.marginRight || '8px'
       }
-    }
+    },
   }
 }
 </script>
@@ -104,21 +106,19 @@ export default {
 <style lang="scss" scoped>
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
   @import '../styles.scss';
-  input[type='checkbox'] {
-    & {
-      border-radius: 7px;
-      &:after {
-        width: 5px;
-        height: 9px;
-        border: 2px solid var(--active-inner);
-        border-top: 0;
-        border-left: 0;
-        left: 6px;
-        top: 3px;
-        transform: rotate(45deg);
-      }
+  input[type='radio'] {
+    border-radius: 50%;
+    &:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, .7));
+    }
+    &:checked {
+      --s: .5;
     }
   }
 }
-
 </style>

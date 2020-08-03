@@ -1,2 +1,2 @@
-/* eslint-disable import/prefer-default-export */
-export { default as Checkbox } from './Checkbox.vue';
+export { default as EasyCheckbox } from './Checkbox.vue';
+export { default as EasyRadio } from './Radio.vue';

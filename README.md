@@ -55,7 +55,7 @@ data () {
   <easy-radio text="Radio component" v-model="isChecked" />
 ```
 
-## For more examples check [here]([here](https://github.com/umutbozdag/vue-easy-controls/blob/master/dev/serve.vue))
+## For more examples check [here](https://github.com/umutbozdag/vue-easy-controls/blob/master/dev/serve.vue)
 
 
 > NOTE: Props for both of the components are the same

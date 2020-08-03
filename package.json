@@ -1,7 +1,11 @@
 {
   "name": "vue2-easy-controls",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "An easy to use Checkbox and Radio components for Vue 2",
+  "author": {
+    "name": "umutbozdag",
+    "email": "umutbozdag@outlook.com.tr"
+  },
   "private": false,
   "main": "dist/vue-easy-controls.ssr.js",
   "browser": "dist/vue-easy-controls.esm.js",
@@ -11,6 +15,11 @@
     "dist/*",
     "src/**/*.vue"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umutbozdag/vue-easy-controls.git"
+  },
+  "keywords": ["checkbox", "radio", "vue", "component", "easy", "custom"],
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js --open",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",

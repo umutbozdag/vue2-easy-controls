@@ -10,6 +10,7 @@
 
 `yarn add vue2-easy-controls`
 
+### OR get the library via [UNPKG](https://unpkg.com/vue2-easy-controls@1.0.4/dist/vue-easy-controls.min.js)
 
 ## Usage
 
